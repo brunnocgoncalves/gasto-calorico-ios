@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D12b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="gastoCalorico" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,66 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O1O-wm-4jb" customClass="niceView" customModule="gastoCalorico" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gasto Calorico" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUm-ca-h1X">
+                                        <rect key="frame" x="0.0" y="34.5" width="375" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="6fU-5z-nNP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="35"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12941176470588234" green="0.58823529411764708" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="rUm-ca-h1X" firstAttribute="centerY" secondItem="O1O-wm-4jb" secondAttribute="centerY" id="07M-zt-1Qn"/>
+                                    <constraint firstAttribute="height" constant="128" id="2WU-Ba-FUF"/>
+                                    <constraint firstAttribute="trailing" secondItem="rUm-ca-h1X" secondAttribute="trailing" id="JRE-Fr-cJp"/>
+                                    <constraint firstItem="rUm-ca-h1X" firstAttribute="centerX" secondItem="O1O-wm-4jb" secondAttribute="centerX" id="lSa-uw-2U9"/>
+                                    <constraint firstItem="rUm-ca-h1X" firstAttribute="leading" secondItem="O1O-wm-4jb" secondAttribute="leading" id="x8Q-Y3-r0V"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYJ-Bn-U4y" customClass="niceView" customModule="gastoCalorico" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="603" width="375" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@bgoncalves - More apps comming" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Cd-yf-fjJ">
+                                        <rect key="frame" x="5" y="16" width="370" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="9Kf-pl-wt4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.050980392156862744" green="0.27843137254901962" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="7Cd-yf-fjJ" secondAttribute="trailing" id="ISa-DO-XZV"/>
+                                    <constraint firstAttribute="height" constant="64" id="Q88-1D-G56"/>
+                                    <constraint firstItem="7Cd-yf-fjJ" firstAttribute="centerY" secondItem="YYJ-Bn-U4y" secondAttribute="centerY" id="YYd-z9-KIg"/>
+                                    <constraint firstItem="7Cd-yf-fjJ" firstAttribute="leading" secondItem="YYJ-Bn-U4y" secondAttribute="leading" constant="5" id="tcJ-gT-akm"/>
+                                    <constraint firstItem="7Cd-yf-fjJ" firstAttribute="centerX" secondItem="YYJ-Bn-U4y" secondAttribute="centerX" id="uik-nU-tCy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8901960784313725" green="0.94901960784313721" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="O1O-wm-4jb" secondAttribute="trailing" id="1dy-ut-Nfk"/>
+                            <constraint firstItem="O1O-wm-4jb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="A22-cl-XD1"/>
+                            <constraint firstItem="O1O-wm-4jb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Bod-Cy-HjU"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YYJ-Bn-U4y" secondAttribute="bottom" id="X8i-Hh-lOJ"/>
+                            <constraint firstAttribute="trailing" secondItem="YYJ-Bn-U4y" secondAttribute="trailing" id="fjo-hT-zoc"/>
+                            <constraint firstItem="YYJ-Bn-U4y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qj3-S1-7AY"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
     </scenes>
 </document>
