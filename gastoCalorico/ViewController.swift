@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var heightField: niceField!
     @IBOutlet weak var imcLabel: UILabel!
     @IBOutlet weak var imcZoneLabel: UILabel!
+    @IBOutlet weak var tmbLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,6 +50,7 @@ class ViewController: UIViewController {
             
             imcLabel.text = "\(profile.imc)"
             imcZoneLabel.text = "\(profile.imcZone)"
+            tmbLabel.text = "\(profile.tmb)"
             
         }
         
