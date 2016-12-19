@@ -17,6 +17,7 @@
 		125CE4C81E0825BC003A88DE /* niceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125CE4C71E0825BC003A88DE /* niceView.swift */; };
 		125CE4CA1E08274E003A88DE /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125CE4C91E08274E003A88DE /* constants.swift */; };
 		125CE4CC1E0827B8003A88DE /* niceField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125CE4CB1E0827B8003A88DE /* niceField.swift */; };
+		125CE4CF1E08304E003A88DE /* viewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125CE4CE1E08304E003A88DE /* viewControllerExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		125CE4C71E0825BC003A88DE /* niceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = niceView.swift; sourceTree = "<group>"; };
 		125CE4C91E08274E003A88DE /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		125CE4CB1E0827B8003A88DE /* niceField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = niceField.swift; sourceTree = "<group>"; };
+		125CE4CE1E08304E003A88DE /* viewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = viewControllerExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		125CE4AC1E0816FA003A88DE /* gastoCalorico */ = {
 			isa = PBXGroup;
 			children = (
+				125CE4CD1E083036003A88DE /* Extensions */,
 				125CE4C41E081772003A88DE /* Model */,
 				125CE4C31E081766003A88DE /* View */,
 				125CE4C21E08175D003A88DE /* Controller */,
@@ -101,6 +104,14 @@
 				125CE4C51E08178B003A88DE /* profile.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		125CE4CD1E083036003A88DE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				125CE4CE1E08304E003A88DE /* viewControllerExtension.swift */,
+			);
+			name = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +191,7 @@
 				125CE4C61E08178B003A88DE /* profile.swift in Sources */,
 				125CE4CC1E0827B8003A88DE /* niceField.swift in Sources */,
 				125CE4B01E0816FA003A88DE /* ViewController.swift in Sources */,
+				125CE4CF1E08304E003A88DE /* viewControllerExtension.swift in Sources */,
 				125CE4C81E0825BC003A88DE /* niceView.swift in Sources */,
 				125CE4AE1E0816FA003A88DE /* AppDelegate.swift in Sources */,
 				125CE4CA1E08274E003A88DE /* constants.swift in Sources */,
