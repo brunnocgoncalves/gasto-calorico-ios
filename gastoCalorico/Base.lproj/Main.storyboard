@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -24,11 +25,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O1O-wm-4jb" customClass="niceView" customModule="gastoCalorico" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gasto Calorico" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUm-ca-h1X">
-                                        <rect key="frame" x="0.0" y="34.5" width="375" height="60"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="6fU-5z-nNP"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Gasto Calorico" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUm-ca-h1X">
+                                        <rect key="frame" x="0.0" y="34" width="375" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="35"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -36,21 +35,15 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.12941176470588234" green="0.58823529411764708" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstItem="rUm-ca-h1X" firstAttribute="centerY" secondItem="O1O-wm-4jb" secondAttribute="centerY" id="07M-zt-1Qn"/>
-                                    <constraint firstAttribute="height" constant="128" id="2WU-Ba-FUF"/>
-                                    <constraint firstAttribute="trailing" secondItem="rUm-ca-h1X" secondAttribute="trailing" id="JRE-Fr-cJp"/>
-                                    <constraint firstItem="rUm-ca-h1X" firstAttribute="centerX" secondItem="O1O-wm-4jb" secondAttribute="centerX" id="lSa-uw-2U9"/>
-                                    <constraint firstItem="rUm-ca-h1X" firstAttribute="leading" secondItem="O1O-wm-4jb" secondAttribute="leading" id="x8Q-Y3-r0V"/>
+                                    <constraint firstAttribute="height" constant="128" id="Q4P-Js-fTY"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YYJ-Bn-U4y" customClass="niceView" customModule="gastoCalorico" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="603" width="375" height="64"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@bgoncalves - More apps comming" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Cd-yf-fjJ">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="@bgoncalves - More apps comming" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Cd-yf-fjJ">
                                         <rect key="frame" x="5" y="16" width="370" height="32"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="32" id="9Kf-pl-wt4"/>
-                                        </constraints>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="15"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -58,22 +51,86 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.050980392156862744" green="0.27843137254901962" blue="0.63137254901960782" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="7Cd-yf-fjJ" secondAttribute="trailing" id="ISa-DO-XZV"/>
-                                    <constraint firstAttribute="height" constant="64" id="Q88-1D-G56"/>
-                                    <constraint firstItem="7Cd-yf-fjJ" firstAttribute="centerY" secondItem="YYJ-Bn-U4y" secondAttribute="centerY" id="YYd-z9-KIg"/>
-                                    <constraint firstItem="7Cd-yf-fjJ" firstAttribute="leading" secondItem="YYJ-Bn-U4y" secondAttribute="leading" constant="5" id="tcJ-gT-akm"/>
-                                    <constraint firstItem="7Cd-yf-fjJ" firstAttribute="centerX" secondItem="YYJ-Bn-U4y" secondAttribute="centerX" id="uik-nU-tCy"/>
+                                    <constraint firstAttribute="height" constant="64" id="GRK-IR-6JD"/>
                                 </constraints>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2hM-k4-WTw">
+                                <rect key="frame" x="24" y="136" width="327" height="459"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wfq-kf-nlO" customClass="niceField" customModule="gastoCalorico" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="327" height="28"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Idade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dvq-qe-vRr" customClass="niceField" customModule="gastoCalorico" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="36" width="327" height="28"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Massa Corporal" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zhR-De-tZc" customClass="niceField" customModule="gastoCalorico" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="327" height="28.5"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Altura" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oXM-4a-W3R" customClass="niceField" customModule="gastoCalorico" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="108.5" width="327" height="28"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gok-5z-sLE" customClass="niceView" customModule="gastoCalorico" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="144.5" width="327" height="314.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="tGp-PZ-6u8">
+                                                <rect key="frame" x="0.0" y="0.0" width="327" height="314.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IMC" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QoZ-Gc-EeW">
+                                                        <rect key="frame" x="139" y="0.0" width="49.5" height="104.5"/>
+                                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="25"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24.50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sUk-5H-WQ4">
+                                                        <rect key="frame" x="128" y="104.5" width="71" height="105"/>
+                                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="25"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medio" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afb-I4-Yf9">
+                                                        <rect key="frame" x="127" y="209.5" width="73.5" height="105"/>
+                                                        <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="25"/>
+                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.73333333333333328" green="0.87058823529411766" blue="0.98431372549019602" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="tGp-PZ-6u8" firstAttribute="leading" secondItem="gok-5z-sLE" secondAttribute="leading" id="aqf-xv-xj6"/>
+                                            <constraint firstItem="tGp-PZ-6u8" firstAttribute="top" secondItem="gok-5z-sLE" secondAttribute="top" id="dCF-Vt-RMb"/>
+                                            <constraint firstAttribute="bottom" secondItem="tGp-PZ-6u8" secondAttribute="bottom" id="hQj-h5-Trg"/>
+                                            <constraint firstAttribute="trailing" secondItem="tGp-PZ-6u8" secondAttribute="trailing" id="jck-N4-fcI"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.8901960784313725" green="0.94901960784313721" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="O1O-wm-4jb" secondAttribute="trailing" id="1dy-ut-Nfk"/>
-                            <constraint firstItem="O1O-wm-4jb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="A22-cl-XD1"/>
-                            <constraint firstItem="O1O-wm-4jb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Bod-Cy-HjU"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YYJ-Bn-U4y" secondAttribute="bottom" id="X8i-Hh-lOJ"/>
-                            <constraint firstAttribute="trailing" secondItem="YYJ-Bn-U4y" secondAttribute="trailing" id="fjo-hT-zoc"/>
-                            <constraint firstItem="YYJ-Bn-U4y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="qj3-S1-7AY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="YYJ-Bn-U4y" secondAttribute="bottom" id="0JP-Zi-SEp"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2hM-k4-WTw" secondAttribute="trailing" constant="8" id="3kg-yz-e8f"/>
+                            <constraint firstAttribute="trailing" secondItem="O1O-wm-4jb" secondAttribute="trailing" id="68P-t9-Kvh"/>
+                            <constraint firstItem="2hM-k4-WTw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="L6t-8d-XcP"/>
+                            <constraint firstItem="YYJ-Bn-U4y" firstAttribute="top" secondItem="2hM-k4-WTw" secondAttribute="bottom" constant="8" id="M6G-Ns-um0"/>
+                            <constraint firstItem="2hM-k4-WTw" firstAttribute="top" secondItem="O1O-wm-4jb" secondAttribute="bottom" constant="8" id="Tf2-KQ-2E5"/>
+                            <constraint firstItem="O1O-wm-4jb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="VxN-dm-chb"/>
+                            <constraint firstAttribute="trailing" secondItem="YYJ-Bn-U4y" secondAttribute="trailing" id="bnt-Js-NFO"/>
+                            <constraint firstItem="YYJ-Bn-U4y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cFU-4g-sEE"/>
+                            <constraint firstItem="O1O-wm-4jb" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="gJt-wh-9cD"/>
                         </constraints>
                     </view>
                 </viewController>

@@ -16,6 +16,7 @@
 		125CE4C61E08178B003A88DE /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125CE4C51E08178B003A88DE /* profile.swift */; };
 		125CE4C81E0825BC003A88DE /* niceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125CE4C71E0825BC003A88DE /* niceView.swift */; };
 		125CE4CA1E08274E003A88DE /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125CE4C91E08274E003A88DE /* constants.swift */; };
+		125CE4CC1E0827B8003A88DE /* niceField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125CE4CB1E0827B8003A88DE /* niceField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		125CE4C51E08178B003A88DE /* profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
 		125CE4C71E0825BC003A88DE /* niceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = niceView.swift; sourceTree = "<group>"; };
 		125CE4C91E08274E003A88DE /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
+		125CE4CB1E0827B8003A88DE /* niceField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = niceField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				125CE4C71E0825BC003A88DE /* niceView.swift */,
+				125CE4CB1E0827B8003A88DE /* niceField.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 			files = (
 				125CE4B61E0816FA003A88DE /* gastoCalorico.xcdatamodeld in Sources */,
 				125CE4C61E08178B003A88DE /* profile.swift in Sources */,
+				125CE4CC1E0827B8003A88DE /* niceField.swift in Sources */,
 				125CE4B01E0816FA003A88DE /* ViewController.swift in Sources */,
 				125CE4C81E0825BC003A88DE /* niceView.swift in Sources */,
 				125CE4AE1E0816FA003A88DE /* AppDelegate.swift in Sources */,
