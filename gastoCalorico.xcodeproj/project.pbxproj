@@ -13,7 +13,7 @@
 		125CE4B61E0816FA003A88DE /* gastoCalorico.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 125CE4B41E0816FA003A88DE /* gastoCalorico.xcdatamodeld */; };
 		125CE4B81E0816FA003A88DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 125CE4B71E0816FA003A88DE /* Assets.xcassets */; };
 		125CE4BB1E0816FA003A88DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 125CE4B91E0816FA003A88DE /* LaunchScreen.storyboard */; };
-		125CE4C61E08178B003A88DE /* profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125CE4C51E08178B003A88DE /* profile.swift */; };
+		125CE4C61E08178B003A88DE /* userProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125CE4C51E08178B003A88DE /* userProfile.swift */; };
 		125CE4C81E0825BC003A88DE /* niceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125CE4C71E0825BC003A88DE /* niceView.swift */; };
 		125CE4CA1E08274E003A88DE /* constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125CE4C91E08274E003A88DE /* constants.swift */; };
 		125CE4CC1E0827B8003A88DE /* niceField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125CE4CB1E0827B8003A88DE /* niceField.swift */; };
@@ -29,7 +29,7 @@
 		125CE4B71E0816FA003A88DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		125CE4BA1E0816FA003A88DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		125CE4BC1E0816FA003A88DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		125CE4C51E08178B003A88DE /* profile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = profile.swift; sourceTree = "<group>"; };
+		125CE4C51E08178B003A88DE /* userProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = userProfile.swift; sourceTree = "<group>"; };
 		125CE4C71E0825BC003A88DE /* niceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = niceView.swift; sourceTree = "<group>"; };
 		125CE4C91E08274E003A88DE /* constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = constants.swift; sourceTree = "<group>"; };
 		125CE4CB1E0827B8003A88DE /* niceField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = niceField.swift; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 		125CE4C41E081772003A88DE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				125CE4C51E08178B003A88DE /* profile.swift */,
+				125CE4C51E08178B003A88DE /* userProfile.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -188,7 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				125CE4B61E0816FA003A88DE /* gastoCalorico.xcdatamodeld in Sources */,
-				125CE4C61E08178B003A88DE /* profile.swift in Sources */,
+				125CE4C61E08178B003A88DE /* userProfile.swift in Sources */,
 				125CE4CC1E0827B8003A88DE /* niceField.swift in Sources */,
 				125CE4B01E0816FA003A88DE /* ViewController.swift in Sources */,
 				125CE4CF1E08304E003A88DE /* viewControllerExtension.swift in Sources */,

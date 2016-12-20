@@ -1,5 +1,5 @@
 //
-//  profile.swift
+//  userProfile.swift
 //  gastoCalorico
 //
 //  Created by Brunno Goncalves on 19/12/16.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Profile {
+class UserProfile {
     private var _gender: String = "Masculino"
     private var _age: Int = 15
     private var _bodyWeight: Double = 80
